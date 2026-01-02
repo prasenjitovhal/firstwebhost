@@ -1,12 +1,8 @@
-provider "aws" {
-  region = "ap-south-1"
-}
-
-resource "aws_instance" "ec2" {
-  ami           = "ami-0f58b397bc5c1f2e8"
+resource "aws_instance" "jenkins_ec2" {
+  ami           = "ami-0f5ee92e2d63afc18" # Amazon Linux 2 (Mumbai)
   instance_type = "t2.micro"
 
   tags = {
-    Name = "EC2-from-Jenkins"
+    Name = "EC2-from-Jenkins-Terraform"
   }
 }
