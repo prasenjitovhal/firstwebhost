@@ -6,7 +6,7 @@ pipeline {
         stage('Clone Repo') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/USERNAME/terraform-ec2.git'
+                    url: 'https://github.com/prasenjitovhal/firstwebhost.git'
             }
         }
 
