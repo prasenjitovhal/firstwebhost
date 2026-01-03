@@ -6,20 +6,10 @@ pipeline {
     }
 
     stages {
+
         stage('Checkout') {
             steps {
                 checkout scm
-            }
-        }
-    }
-
-
-    stages {
-
-        stage('Clone Repo') {
-            steps {
-                git branch: 'main',
-                    url: 'https://github.com/prasenjitovhal/firstwebhost.git'
             }
         }
 
