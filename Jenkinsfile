@@ -1,6 +1,19 @@
 pipeline {
     agent any
 
+    tools {
+        git 'Default-Git'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+    }
+
+
     stages {
 
         stage('Clone Repo') {
